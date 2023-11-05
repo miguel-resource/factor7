@@ -35,9 +35,22 @@ const Footer = () => {
               Encuentranos en cualquiera de estas redes sociales y mantente al
               tanto de nuestras novedades.
             </h5>
-            <div className="mt-6 lg:mb-0 mb-6">
+            <div 
+            style={{
+              display: "flex",
+              // justifyContent: "center",
+              alignItems: "center",
+              marginTop: "1rem",
+              gap: "1rem",
+            }}
+            // className="mt-6 lg:mb-0 mb-6"
+            >
               <IconButton
-                className="bg-white text-skate-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                style={{
+                  backgroundColor: "white",
+                  color: "#3d3d3d",
+                }}
+                className=" shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
                 <InstagramIcon />
@@ -60,7 +73,13 @@ const Footer = () => {
                 <ul className="list-unstyled">
                   <li>
                     <Link
-                      className="text-slate-600 no-underline hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    style={{
+                      color: "#3d3d3d",
+                      textDecoration: "none",
+                      fontSize: "0.875rem", 
+                    }}
+                      
+                      // className="text-slate-600 no-underline hover:text-blueGray-800 font-semibold block pb-2 text-sm"
                       // href="https://www.creative-tim.com/presentation?ref=nnjs-footer"
                       href="https://www.factor7.com.mx"
                       target="_blank"
@@ -71,7 +90,12 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      className="text-slate-600 no-underline hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      style={{
+                        color: "#3d3d3d",
+                        textDecoration: "none",
+                        fontSize: "0.875rem", 
+                      }}
+                      
                       // href="https://blog.creative-tim.com?ref=nnjs-footer"
                       href="https://www.blogger.com"
                       target="_blank"
