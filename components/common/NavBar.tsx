@@ -1,7 +1,7 @@
 import Link from "next/link";
-import DropDown from "./DropDown";
 import { useState } from "react";
-
+import { IconButton } from "@mui/material";
+import DehazeIcon from '@mui/icons-material/Dehaze';
 const NavBar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
@@ -16,16 +16,13 @@ const NavBar = () => {
             >
               Factor 7
             </Link>
-            <button
+            <IconButton
               className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none text-blue-900"
               type="button"
-              //   onClick={() => setNavbarOpen(!navbarOpen)}
+                onClick={() => setNavbarOpen(!navbarOpen)}
             >
-              <i
-                className="fas text-gray-800
-              fa-bars"
-              ></i>
-            </button>
+              <DehazeIcon />
+            </IconButton>
           </div>
           <div
             className={
