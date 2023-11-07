@@ -1,7 +1,16 @@
 import Link from "next/link";
 import { useState } from "react";
 import { IconButton } from "@mui/material";
-import DehazeIcon from '@mui/icons-material/Dehaze';
+import DehazeIcon from "@mui/icons-material/Dehaze";
+import styled from 'styled-components';
+
+
+const StyledIconButton = styled(IconButton)`
+  @media (min-width: 1024px) {
+    display: none;
+  }
+`;
+
 const NavBar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
@@ -16,13 +25,14 @@ const NavBar = () => {
             >
               Factor 7
             </Link>
-            <IconButton
+            <StyledIconButton
               className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none text-blue-900"
               type="button"
                 onClick={() => setNavbarOpen(!navbarOpen)}
+               
             >
               <DehazeIcon />
-            </IconButton>
+            </StyledIconButton>
           </div>
           <div
             className={
@@ -42,7 +52,8 @@ const NavBar = () => {
                     const element = document.getElementById("nosotros");
                     const offset = 100;
                     const bodyRect = document.body.getBoundingClientRect().top;
-                    const elementRect = element?.getBoundingClientRect().top as number;
+                    const elementRect = element?.getBoundingClientRect()
+                      .top as number;
                     const elementPosition = elementRect - bodyRect;
                     const offsetPosition = elementPosition - offset;
 
@@ -63,11 +74,12 @@ const NavBar = () => {
                   href="/#proyectos"
                   onClick={(e: any) => {
                     e.preventDefault();
-                 
+
                     const element = document.getElementById("proyectos");
                     const offset = 100;
                     const bodyRect = document.body.getBoundingClientRect().top;
-                    const elementRect = element?.getBoundingClientRect().top as number;
+                    const elementRect = element?.getBoundingClientRect()
+                      .top as number;
                     const elementPosition = elementRect - bodyRect;
                     const offsetPosition = elementPosition - offset;
 
@@ -75,7 +87,6 @@ const NavBar = () => {
                       top: offsetPosition,
                       behavior: "smooth",
                     });
-
                   }}
                 >
                   <i className="far fa-file-alt text-lg leading-lg mr-2" />{" "}
@@ -95,15 +106,15 @@ const NavBar = () => {
                     const element = document.getElementById("testimonios");
                     const offset = 100;
                     const bodyRect = document.body.getBoundingClientRect().top;
-                    const elementRect = element?.getBoundingClientRect().top as number;
+                    const elementRect = element?.getBoundingClientRect()
+                      .top as number;
                     const elementPosition = elementRect - bodyRect;
                     const offsetPosition = elementPosition - offset;
-                    
+
                     window.scrollTo({
                       top: offsetPosition,
                       behavior: "smooth",
                     });
-
                   }}
                 >
                   <i className="far fa-file-alt text-lg leading-lg mr-2" />{" "}
@@ -120,20 +131,20 @@ const NavBar = () => {
                     const element = document.getElementById("ubicacion");
                     const offset = 100;
                     const bodyRect = document.body.getBoundingClientRect().top;
-                    const elementRect = element?.getBoundingClientRect().top as number;
+                    const elementRect = element?.getBoundingClientRect()
+                      .top as number;
                     const elementPosition = elementRect - bodyRect;
                     const offsetPosition = elementPosition - offset;
-                    
+
                     window.scrollTo({
                       top: offsetPosition,
                       behavior: "smooth",
                     });
-
                   }}
                 >
                   <i className="far fa-file-alt text-lg leading-lg mr-2" />{" "}
                   Ubicación
-                </  Link>
+                </Link>
               </li>
             </ul>
             <ul className=" flex flex-col lg:flex-row list-none lg:ml-auto">
