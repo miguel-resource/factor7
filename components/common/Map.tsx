@@ -21,8 +21,7 @@ const Map = () => {
         // referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
 
-      <div className="flex flex-row items-center justify-center w-full h-full py-10">
-        {/* horario */}
+      <div className="flex  items-center justify-center w-full h-full py-10 flex-col sm:flex-row">
         <div className="flex flex-col items-center justify-center w-full h-full py-20">
           <h6 className="mb-2">
             <span className="text-xl font-semibold tracking-widest ">
@@ -56,7 +55,6 @@ const Map = () => {
           </div>
         </div>
 
-        {/* dirección */}
         <div className="flex flex-col items-center justify-center w-full h-full py-20">
           <h6 className="mb-2">
             <span className="text-xl font-semibold tracking-widest ">

@@ -16,7 +16,9 @@ import Link from "next/link";
 
 const BannerSlider = () => {
   return (
-    <section>
+    <section
+    className=""
+   >
       <h6 className="text-4xl text-center mb-1 font-semibold tracking-widest mt-20">
         Destacados
       </h6>
@@ -39,6 +41,67 @@ const BannerSlider = () => {
         width={1620}
         slidesPerView={2}
         className="mt-20"
+        breakpoints={{
+          320: {
+            width: 640,
+            slidesPerView: 1,
+            coverflowEffect: {
+              rotate: 0,
+              stretch: 0,
+              depth: 0,
+              modifier: 1,
+              slideShadows: false,
+            },
+          },
+          640: {
+            width: 640,
+            slidesPerView: 1,
+            coverflowEffect: {
+              rotate: 0,
+              stretch: 0,
+              depth: 0,
+              modifier: 1,
+              slideShadows: false,
+            },
+          },
+          768: {
+            width: 768,
+            slidesPerView: 2,
+            coverflowEffect: {
+              rotate: 0,
+              stretch: 0,
+              depth: 0,
+              modifier: 1,
+              slideShadows: false,
+            },
+          },
+          1024: {
+            width: 1024,
+            slidesPerView: 2,
+          },
+          1280: {
+            width: 1280,
+            slidesPerView: 2,
+            coverflowEffect: {
+              rotate: 20,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            }
+          },
+          1620: {
+            width: 1620,
+            slidesPerView: 2,
+            coverflowEffect: {
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            }
+          },
+        }}
       >
         <SwiperSlide>
           <Link href={"/"}>
