@@ -88,7 +88,7 @@ const BannerSlider = () => {
               depth: 100,
               modifier: 1,
               slideShadows: true,
-            }
+            },
           },
           1620: {
             width: 1620,
@@ -99,7 +99,7 @@ const BannerSlider = () => {
               depth: 100,
               modifier: 1,
               slideShadows: true,
-            }
+            },
           },
         }}
       >
@@ -116,17 +116,15 @@ const BannerSlider = () => {
           >
             <img src="https://picsum.photos/1920/1080?random=2" alt="banner2" />
           </Link>
-
         </SwiperSlide>
         <SwiperSlide>
-            <Link
-              href={{
-                pathname: "/",
-              }}
-            >
-          <img src="https://picsum.photos/1920/1080?random=3" alt="banner3" />
-            </Link>
-
+          <Link
+            href={{
+              pathname: "/",
+            }}
+          >
+            <img src="https://picsum.photos/1920/1080?random=3" alt="banner3" />
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
           <img src="https://picsum.photos/1920/1080?random=4" alt="banner4" />
