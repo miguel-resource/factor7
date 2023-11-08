@@ -1,5 +1,5 @@
 import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from '@mui/icons-material/Instagram';
+import InstagramIcon from "@mui/icons-material/Instagram";
 import { Icon, IconButton, Link } from "@mui/material";
 
 const Footer = () => {
@@ -26,7 +26,6 @@ const Footer = () => {
       </div>
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap text-center lg:text-left">
-          {/* contacts */}
           <div className="w-full lg:w-6/12 px-4">
             <h4 className="text-3xl font-semibold">
               Mantente en contacto con nosotros
@@ -35,15 +34,16 @@ const Footer = () => {
               Encuentranos en cualquiera de estas redes sociales y mantente al
               tanto de nuestras novedades.
             </h5>
-            <div 
-            style={{
-              display: "flex",
-              // justifyContent: "center",
-              alignItems: "center",
-              marginTop: "1rem",
-              gap: "1rem",
-            }}
-            // className="mt-6 lg:mb-0 mb-6"
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                // justifyContent: "center",
+                marginTop: "1rem",
+                marginBottom: "1rem",
+                gap: "1rem",
+              }}
+              className="justify-center sm:justify-start"
             >
               <IconButton
                 style={{
@@ -71,23 +71,18 @@ const Footer = () => {
             <div className="flex flex-wrap items-top mb-6">
               <div className="w-full lg:w-4/12 px-4 ml-auto">
                 <span className="block uppercase text-slate-500 text-sm font-semibold mb-2">
-                  {/* Useful Links */}
                   Enlaces útiles
                 </span>
                 <ul className="list-unstyled">
                   <li>
                     <Link
-                    style={{
-                      color: "#3d3d3d",
-                      textDecoration: "none",
-                      fontSize: "0.875rem", 
-                    }}
-                      
-                      // className="text-slate-600 no-underline hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      // href="https://www.creative-tim.com/presentation?ref=nnjs-footer"
+                      style={{
+                        color: "#3d3d3d",
+                        textDecoration: "none",
+                        fontSize: "0.875rem",
+                      }}
                       href="https://www.factor7.com.mx"
                       target="_blank"
-
                     >
                       About Us
                     </Link>
@@ -97,17 +92,14 @@ const Footer = () => {
                       style={{
                         color: "#3d3d3d",
                         textDecoration: "none",
-                        fontSize: "0.875rem", 
+                        fontSize: "0.875rem",
                       }}
-                      
-                      // href="https://blog.creative-tim.com?ref=nnjs-footer"
                       href="https://www.blogger.com"
                       target="_blank"
                     >
                       Blog
                     </Link>
                   </li>
-
                 </ul>
               </div>
             </div>

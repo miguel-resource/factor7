@@ -13,12 +13,10 @@ const Map = () => {
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15256.34969412012!2d-96.7155942!3d17.0683759!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c7223100000001%3A0x3d0425a8190a4ab9!2sFactor%20Siete%20Dise%C3%B1o%20Publicitario!5e0!3m2!1ses-419!2smx!4v1699200044589!5m2!1ses-419!2smx"
         width="600"
+        className="rounded-xl h-64 sm:h-96"
         height="450"
-        // style="border:0;"
-        style={{ border: "0", width: "80%", height: "35em" }}
-        // allowfullscreen=""
+        style={{ border: "0", width: "80%"}}
         loading="lazy"
-        // referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
 
       <div className="flex  items-center justify-center w-full h-full py-10 flex-col sm:flex-row">
@@ -55,7 +53,7 @@ const Map = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center w-full h-full py-20">
+        <div className="flex flex-col items-center justify-center w-full h-full py-20 p-8 sm:p-2">
           <h6 className="mb-2">
             <span className="text-xl font-semibold tracking-widest ">
               Dirección
