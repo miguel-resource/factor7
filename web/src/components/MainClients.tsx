@@ -19,22 +19,22 @@ export default function MainClients() {
         />
         <img
           className="w-10/12 mx-auto lg:w-full opacity-50 hover:opacity-100 ease-in-out transition-all duration-300"
-          src="https://www.grafiquesmogent.com/wp-content/uploads/2020/04/LOGOS-CLIENTES-vecmedical.png"
+          src="https://www.grafiquesmogent.com/wp-content/uploads/2020/04/LOGOS-CLIENTES-bayer.png"
           alt="Clientes"
         />
         <img
           className="w-10/12 mx-auto lg:w-full opacity-50 hover:opacity-100 ease-in-out transition-all duration-300"
-          src="https://www.grafiquesmogent.com/wp-content/uploads/2020/04/LOGOS-CLIENTES-vecmedical.png"
+          src="https://www.grafiquesmogent.com/wp-content/uploads/2020/04/LOGOS-CLIENTES-garmin.png"
           alt="Clientes"
         />
         <img
           className="w-10/12 mx-auto lg:w-full opacity-50 hover:opacity-100 ease-in-out transition-all duration-300"
-          src="https://www.grafiquesmogent.com/wp-content/uploads/2020/04/LOGOS-CLIENTES-vecmedical.png"
+          src="https://www.grafiquesmogent.com/wp-content/uploads/2020/04/LOGOS-CLIENTES-BB-hotels-1.png"
           alt="Clientes"
         />
         <img
           className="w-10/12 mx-auto lg:w-full opacity-50 hover:opacity-100 ease-in-out transition-all duration-300"
-          src="https://www.grafiquesmogent.com/wp-content/uploads/2020/04/LOGOS-CLIENTES-vecmedical.png"
+          src="	https://www.grafiquesmogent.com/wp-content/uploads/2020/04/LOGOS-CLIENTES-tenkabest.png"
           alt="Clientes"
         />
         <img

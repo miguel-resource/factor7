@@ -48,11 +48,11 @@ export default function Services() {
           Nuestros servicios
         </span>
       </h3>
-      <Masonry>
+      <Masonry columnsCount={3}>
         {photos.map((photo, index) => (
           <a
             key={index}
-              href={photo.link}
+            href={photo.link}
             target="_blank"
             rel="noreferrer"
             className="w-full h-full ease-in-out transition-all duration-300 group hover:scale-95 cursor-pointer"
@@ -63,8 +63,8 @@ export default function Services() {
               className="w-full h-full object-cover group-hover:brightness-50"
             />
 
-            <p className="hidden group-hover:block group-hover:brightness-80 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-slate-100 font-semibold text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <p className="hidden group-hover:block group-hover:brightness-80 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-slate-100 font-normal md:font-semibold text-xs md:text-lg lg:text-2xl">
+              Lorem ipsum dolor sit amet elit.
             </p>
           </a>
         ))}

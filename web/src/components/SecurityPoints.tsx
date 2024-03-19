@@ -6,70 +6,41 @@ export default function SecurityPoints() {
             sm:grid-cols-6 sm:text-xs sm:w-11/12 lg:text-sm lg:w-10/12 xl:w-7/12  lg:gap-12 w-8/12 mx-auto mt-10"
       >
         <div>
-          <img
-            className="w-12/12 mx-auto"
-            src="https://www.sprintcopy.com/wp-content/uploads/2020/05/icon-1.png"
-            alt="Alianza Empresarial"
-          />
+          <i className="fas fa-shield-alt fa-3x"></i>
           <h4 className="text-white text-center font-light text-md mt-10 mb-10 tracking-widest ">
-            Seguridad
+            Tiempos de entrega garantizados
           </h4>
         </div>
 
         <div className="max-w-xs">
-          <img
-            className="w-12/12 mx-auto"
-            src="https://www.sprintcopy.com/wp-content/uploads/2020/05/icon-1.png"
-            alt="Alianza Empresarial"
-          />
+          <i className="fas fa-clock fa-3x"></i>
           <h4 className="text-white text-center font-light text-md mt-10 mb-10 tracking-widest ">
-            Seguridad
+          Eficiencia y puntualidad
           </h4>
         </div>
 
         <div className="max-w-xs">
-          <img
-            className="w-12/12 mx-auto"
-            src="https://www.sprintcopy.com/wp-content/uploads/2020/05/icon-1.png"
-            alt="Alianza Empresarial"
-          />
+          <i className="fas fa-tree fa-3x"></i>
           <h4 className="text-white text-center font-light text-md mt-10 mb-10 tracking-widest ">
-            Seguridad
+            Experiencia y calidad
           </h4>
         </div>
 
         <div className="max-w-xs">
-          <img
-            className="w-12/12 mx-auto"
-            src="https://www.sprintcopy.com/wp-content/uploads/2020/05/icon-1.png"
-            alt="Alianza Empresarial"
-          />
+          <i className="fas fa-handshake fa-3x"></i>
           <h4 className="text-white text-center font-light text-md mt-10 mb-10 tracking-widest ">
-            Seguridad
+            Profesionalidad y compromiso
           </h4>
         </div>
 
         <div className="max-w-xs">
-          <img
-            className="w-12/12 mx-auto"
-            src="https://www.sprintcopy.com/wp-content/uploads/2020/05/icon-1.png"
-            alt="Alianza Empresarial"
-          />
+          <i className="fas fa-credit-card fa-3x"></i>
           <h4 className="text-white text-center font-light text-md mt-10 mb-10 tracking-widest ">
-            Seguridad
+            Métodos de pago seguros y confiables
           </h4>
         </div>
 
-        <div className="max-w-xs">
-          <img
-            className="w-12/12 mx-auto"
-            src="https://www.sprintcopy.com/wp-content/uploads/2020/05/icon-1.png"
-            alt="Alianza Empresarial"
-          />
-          <h4 className="text-white text-center font-light text-md mt-10 mb-10 tracking-widest ">
-            Seguridad
-          </h4>
-        </div>
+
       </div>
     </section>
   );
