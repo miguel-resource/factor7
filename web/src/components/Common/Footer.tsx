@@ -8,12 +8,12 @@ export default function Footer() {
       <div className="max-w-xs">
         <h3 className="text-xl font-bold mb-8">Contacto</h3>
         <p className="mb-4">
-          <i className="fas fa-phone-alt"></i> 123-456-7890
+          <i className="fas fa-phone-alt"></i> +52 951 513 3458 
         </p>
         <p className="mb-4">
-          <i className="fas fa-envelope"></i>
+          <i className="fas fa-envelope"></i>{" "}
           <a href="mailto:" className="text-white">
-            test@factorsiete.com
+            factorsieted@gmail.com
           </a>
         </p>
         <p>
@@ -30,14 +30,10 @@ export default function Footer() {
         <h3 className="text-xl font-bold mb-8">Empresa</h3>
         <ul className="flex flex-col gap-4">
           <li>
-            <a href="">
-              <i className="fas fa-info-circle"></i> Nosotros
-            </a>
+            <a href="">Nosotros</a>
           </li>
           <li>
-            <a href="">
-              <i className="fas fa-envelope"></i> Contacto
-            </a>
+            <a href="">Contacto</a>
           </li>
         </ul>
       </div>
@@ -45,31 +41,27 @@ export default function Footer() {
       <div>
         <h3 className="text-xl font-bold mb-8">Servicios</h3>
         <ul className="flex flex-col gap-4">
-          <li>
-            <i className="fas fa-print"></i> Impresión de gran formato
-          </li>
-          <li>
-            <i className="fas fa-ad"></i> Publicidad
-          </li>
+          <li>Impresión de gran formato</li>
+          <li>Publicidad</li>
         </ul>
       </div>
 
       <div>
         <h3 className="text-xl font-bold mb-8">Redes Sociales</h3>
-        <ul className="flex flex-col gap-4">
+        <ul className="grid grid-cols-3 gap-0 w-1/2 text-lg">
           <li>
             <a href="">
-              <i className="fab fa-facebook"></i> Facebook
+              <i className="fab fa-facebook-f"></i>
             </a>
           </li>
           <li>
             <a href="">
-              <i className="fab fa-instagram"></i> Instagram
+              <i className="fab fa-instagram"></i>
             </a>
           </li>
           <li>
             <a href="">
-              <i className="fab fa-twitter"></i> Twitter
+              <i className="fab fa-twitter"></i>
             </a>
           </li>
         </ul>
