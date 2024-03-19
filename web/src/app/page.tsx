@@ -5,19 +5,19 @@ import Services from "@/components/Services";
 import Image from "next/image";
 import SecurityPoints from "../components/SecurityPoints";
 import MainClients from "@/components/MainClients";
-import MainAsociation from "@/components/MainAsociation";
+import MainAssociation from "@/components/MainAssociation";
 import Footer from "@/components/Common/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-4">
+    <main className="flex min-h-screen flex-col items-center justify-between bg-white">
       <Header />
       <Carousel />
       <Description />
       <Services />
       <SecurityPoints />
       <MainClients />
-      <MainAsociation />
+      <MainAssociation />
       <Footer />
     </main>
   );
