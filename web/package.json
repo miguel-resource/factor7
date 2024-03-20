@@ -15,7 +15,9 @@
     "react-dom": "^18",
     "react-photo-collage": "^1.0.9",
     "react-responsive-masonry": "^2.2.0",
-    "styled-components": "^6.1.8"
+    "styled-components": "^6.1.8",
+    "swiper": "^11.0.7",
+    "swiper-react": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",

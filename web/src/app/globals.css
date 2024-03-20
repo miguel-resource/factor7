@@ -31,3 +31,12 @@ body {
     text-wrap: balance;
   }
 }
+
+.swiper-button-prev, .swiper-button-next {
+  color: rgb(216, 216, 216) !important;
+}
+
+
+.swiper-pagination-bullet-active {
+  background-color: rgb(216, 216, 216) !important;
+}

@@ -43,8 +43,8 @@ export default function Services() {
   ];
   return (
     <section className="text-slate-700 flex flex-col items-center justify-center w-full">
-      <h3 className="mb-5">
-        <span className="font-semibold text-2xl mt-10 mb-10 tracking-widest lg:text-4xl">
+      <h3 className="mb-10 mt-20">
+        <span className="font-semibold text-2xl mt-10 tracking-widest lg:text-4xl">
           Nuestros servicios
         </span>
       </h3>
