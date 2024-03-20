@@ -69,7 +69,7 @@ export default function Header() {
       <div 
         className={`${
           showMenu ? "flex" : "hidden"
-        } flex-col w-full h-screen bg-slate-800 absolute top-0 left-0`}
+        } flex-col w-full h-screen bg-slate-800 absolute top-0 left-0 z-50`}
       >
         <button 
           onClick={() => setShowMenu(!showMenu)}

@@ -30,9 +30,10 @@ export default function Carousel() {
           />
           <h3
             className="text-slate-100
-            w-1/3
-            leading-extra-loose
-            absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-2xl font-semibold md:text-4xl md:font-bold"
+            w-8/12
+            leading-extra-loose  
+            absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl font-semibold 
+            md:text-5xl md:font-bold lg:left-2/3 lg:w-1/3 lg:text-6xl"
           >
             Ofertas en impresión digital y offset.
           </h3>
@@ -45,9 +46,10 @@ export default function Carousel() {
           />
           <h3
             className="text-slate-100
-            w-1/3
+            w-8/12
             leading-extra-loose
-            absolute top-1/2 left-3/4 transform -translate-x-1/2 -translate-y-1/2 text-2xl font-semibold md:text-4xl md:font-bold"
+            absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl font-semibold
+            md:text-5xl md:font-bold lg:left-2/3 lg:w-1/3 lg:text-6xl"
           >
             Creamos tu marca, tu imagen, tu publicidad y tu web.
           </h3>
