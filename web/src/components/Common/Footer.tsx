@@ -18,8 +18,9 @@ export default function Footer() {
         </p>
         <p>
           {/* direction */}
-          1234 Main St, Springfield, IL 62701
+          1234 Main St, Springfield, IL 62701 
         </p>
+        <br />
         <p>
           Factor Siete es una empresa de publicidad e imprenta, especializada en
           la impresión de gran formato y la publicidad en general.

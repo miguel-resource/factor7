@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
-
 
   return (
     <header className="flex justify-between w-full p-4 bg-slate-800">
@@ -25,19 +25,37 @@ export default function Header() {
       >
         <ul className="flex gap-4 mr-10">
           <li>
-            <a href="">Inicio</a>
+            {/* <a href="">Inicio</a> */}
+            <Link href="/" className="text-slate-200 hover:text-slate-100">
+              Inicio
+            </Link>
           </li>
           <li>
-            <a href="">Nosotros</a>
+            {/* <a href="">Nosotros</a> */}
+            <Link href="/about" className="text-slate-200 hover:text-slate-100">
+              Nosotros
+            </Link>
           </li>
           <li>
-            <a href="">Servicios</a>
+            <Link
+              href="/services"
+              className="text-slate-200 hover:text-slate-100"
+            >
+              Servicios
+            </Link>
           </li>
           <li>
-            <a href="">Contacto</a>
+            <Link
+              href="/contact"
+              className="text-slate-200 hover:text-slate-100"
+            >
+              Contacto
+            </Link>
           </li>
           <li>
-            <a href="">FAQ</a>
+            <Link href="/faq" className="text-slate-200 hover:text-slate-100">
+              FAQ
+            </Link>
           </li>
         </ul>
         {/* Social Media */}
@@ -59,19 +77,20 @@ export default function Header() {
       </nav>
 
       {/*  toggle menu */}
-      <button 
+      <button
         onClick={() => setShowMenu(!showMenu)}
-      className=" block md:hidden items-center align-middle">
+        className=" block md:hidden items-center align-middle"
+      >
         <i className="fas fa-bars"></i>
       </button>
 
       {/*  Mobile menu */}
-      <div 
+      <div
         className={`${
           showMenu ? "flex" : "hidden"
         } flex-col w-full h-screen bg-slate-800 absolute top-0 left-0 z-50`}
       >
-        <button 
+        <button
           onClick={() => setShowMenu(!showMenu)}
           className="text-white text-4xl absolute top-4 right-4"
         >
@@ -79,19 +98,37 @@ export default function Header() {
         </button>
         <ul className="flex flex-col gap-4 items-center justify-center h-full uppercase">
           <li>
-            <a href="">Inicio</a>
+            <Link href="/" className="text-slate-200 hover:text-slate-100">
+              Inicio
+            </Link>
+
           </li>
           <li>
-            <a href="">Nosotros</a>
+            <Link href="/about" className="text-slate-200 hover:text-slate-100">
+              Nosotros
+            </Link>
           </li>
           <li>
-            <a href="">Servicios</a>
+            <Link
+              href="/services"
+              className="text-slate-200 hover:text-slate-100"
+            >
+              Servicios
+            </Link>
+
           </li>
           <li>
-            <a href="">Contacto</a>
+            <Link
+              href="/contact"
+              className="text-slate-200 hover:text-slate-100"
+            >
+              Contacto
+            </Link>
           </li>
           <li>
-            <a href="">FAQ</a>
+            <Link href="/faq" className="text-slate-200 hover:text-slate-100">
+              FAQ
+            </Link>
           </li>
         </ul>
       </div>
