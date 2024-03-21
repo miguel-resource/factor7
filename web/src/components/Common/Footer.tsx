@@ -62,7 +62,7 @@ export default function Footer() {
           </li>
           <li>
             <a href="">
-              <i className="fab fa-twitter"></i>
+              <i className="fab fa-tiktok"></i>
             </a>
           </li>
         </ul>
