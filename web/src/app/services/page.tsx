@@ -2,6 +2,8 @@
 
 import { CommonWrapper } from "@/components/Common/Wrapper";
 import { SearchInput } from "@/components/SearchInput";
+import { ServicesList } from "@/components/ServicesList";
+import { Provider, useSelector } from "react-redux";
 import Masonry from "react-responsive-masonry";
 
 export default function ServicesPage() {
@@ -10,36 +12,43 @@ export default function ServicesPage() {
       source:
         "https://www.grafiquesmogent.com/wp-content/uploads/2020/04/PLV-001a.jpg",
       link: "/",
+      name: "PLV",
     },
     {
       source:
         "https://www.grafiquesmogent.com/wp-content/uploads/2020/04/rollup-001-960x1050.jpg",
       link: "/",
+      name: "Rollup",
     },
     {
       source:
         "https://www.grafiquesmogent.com/wp-content/uploads/2020/04/tottem-001a-960x1050.jpg",
       link: "/",
+      name: "Tottem",
     },
     {
       source:
         "https://www.grafiquesmogent.com/wp-content/uploads/2020/05/vinilos-001.jpg",
       link: "/",
+      name: "Vinilos",
     },
     {
       source:
         "https://www.grafiquesmogent.com/wp-content/uploads/2020/04/carpetas-001b.jpg",
       link: "/",
+      name: "Carpetas",
     },
     {
       source:
         "https://www.grafiquesmogent.com/wp-content/uploads/2020/04/calendario-001b.jpg",
       link: "/",
+      name: "Calendario",
     },
     {
       source:
         "https://www.grafiquesmogent.com/wp-content/uploads/2021/04/stopper-impresion-imprenta-barcelona-005.jpg",
       link: "/",
+      name: "Stopper",
     },
   ];
 
@@ -65,28 +74,9 @@ export default function ServicesPage() {
 
         <SearchInput />
 
-        <Masonry columnsCount={2}>
-          {services.map((photo, index) => (
-            <a
-              key={index}
-              href={photo.link}
-              target="_blank"
-              rel="noreferrer"
-              className="w-full h-full ease-in-out transition-all duration-300 group hover:scale-95 cursor-pointer"
-            >
-              <img
-                src={photo.source}
-                alt="Services"
-                className="w-full h-full object-cover group-hover:brightness-50"
-              />
-
-              <p className="hidden group-hover:block group-hover:brightness-80 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-slate-100 font-normal md:font-semibold text-xs md:text-lg lg:text-2xl">
-                Lorem ipsum dolor sit amet elit.
-              </p>
-            </a>
-          ))}
-        </Masonry>
+        <ServicesList services={services} />
       </section>
     </CommonWrapper>
+    
   );
 }

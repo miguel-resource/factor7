@@ -16,14 +16,14 @@ export default function Header() {
   return (
     <header className="flex justify-between w-full p-4 bg-slate-800">
       {/*  Logo */}
-      <div>
+      <Link href="/">
         <Image
           src="/static/logo.png"
           alt="Factor Siete"
           width={50}
           height={30}
         />
-      </div>
+      </Link>
 
       {/*  Navigation */}
       <nav
