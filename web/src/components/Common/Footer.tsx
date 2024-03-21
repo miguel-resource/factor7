@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer
@@ -8,7 +10,7 @@ export default function Footer() {
       <div className="max-w-xs">
         <h3 className="text-xl font-bold mb-8">Contacto</h3>
         <p className="mb-4">
-          <i className="fas fa-phone-alt"></i> +52 951 513 3458 
+          <i className="fas fa-phone-alt"></i> +52 951 513 3458
         </p>
         <p className="mb-4">
           <i className="fas fa-envelope"></i>{" "}
@@ -18,7 +20,7 @@ export default function Footer() {
         </p>
         <p>
           {/* direction */}
-          1234 Main St, Springfield, IL 62701 
+          1234 Main St, Springfield, IL 62701
         </p>
         <br />
         <p>
@@ -51,19 +53,19 @@ export default function Footer() {
         <h3 className="text-xl font-bold mb-8">Redes Sociales</h3>
         <ul className="grid grid-cols-3 gap-0 w-1/2 text-lg">
           <li>
-            <a href="">
+            <Link target="_blank" href="https://www.facebook.com/Factor7DP">
               <i className="fab fa-facebook-f"></i>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="">
+            <Link target="_blank" href="https://www.instagram.com/factor7dp/">
               <i className="fab fa-instagram"></i>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="">
-              <i className="fab fa-tiktok"></i>
-            </a>
+            <Link target="_blank" href="https://www.tiktok.com/@factor7dp">
+              <i className="fab fa-tiktok"></i>{" "}
+            </Link>
           </li>
         </ul>
       </div>

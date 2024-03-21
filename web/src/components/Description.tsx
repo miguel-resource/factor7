@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Description() {
   return (
     <section className="mb-10 mt-10 text-slate-700 lg:px-0 text-center">
@@ -14,9 +16,13 @@ export default function Description() {
       </p>
 
       <div>
-        <button className="bg-slate-700 text-white py-2 px-8 rounded-full">
-            <a href="/contacto">Contactar</a>
-        </button>
+        <Link
+          className="bg-slate-700 text-white py-2 px-8 rounded-full"
+          href="/contact"
+        >
+          Contactar
+        </Link>
+        {/* <a href="/contacto">Contactar</a> */}
       </div>
     </section>
   );

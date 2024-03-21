@@ -60,16 +60,18 @@ export default function Header() {
         </ul>
         {/* Social Media */}
         <div className="flex gap-4 ">
-          <a href="">
+          <Link target="_blank" href="https://www.facebook.com/Factor7DP">
             <i className="fab fa-facebook-f"></i>
-          </a>
-          <a href="">
+          </Link>
+         <Link target="_blank" href="https://www.instagram.com/factor7dp/">
             <i className="fab fa-instagram"></i>
-          </a>
-          <a href="">
+          </Link>
+          <Link
+            target="_blank"
+            href="https://www.tiktok.com/@factor7dp"
+          >
             <i className="fab fa-tiktok"></i>{" "}
-          </a>
-
+          </Link>
           <button className="ml-4">
             <i className="fas fa-search text-xl "></i>
           </button>
@@ -101,7 +103,6 @@ export default function Header() {
             <Link href="/" className="text-slate-200 hover:text-slate-100">
               Inicio
             </Link>
-
           </li>
           <li>
             <Link href="/about" className="text-slate-200 hover:text-slate-100">
@@ -115,7 +116,6 @@ export default function Header() {
             >
               Servicios
             </Link>
-
           </li>
           <li>
             <Link
