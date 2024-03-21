@@ -67,13 +67,25 @@ export default function Header() {
         </ul>
         {/* Social Media */}
         <div className="flex gap-4 ">
-          <Link target="_blank" href="https://www.facebook.com/Factor7DP">
+          <Link
+            aria-label="Facebook"
+            target="_blank"
+            href="https://www.facebook.com/Factor7DP"
+          >
             <i className="fab fa-facebook-f"></i>
           </Link>
-          <Link target="_blank" href="https://www.instagram.com/factor7dp/">
+          <Link
+            aria-label="Instagram"
+            target="_blank"
+            href="https://www.instagram.com/factor7dp/"
+          >
             <i className="fab fa-instagram"></i>
           </Link>
-          <Link target="_blank" href="https://www.tiktok.com/@factor7dp">
+          <Link
+            aria-label="Tiktok"
+            target="_blank"
+            href="https://www.tiktok.com/@factor7dp"
+          >
             <i className="fab fa-tiktok"></i>{" "}
           </Link>
           <button

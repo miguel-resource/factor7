@@ -45,8 +45,7 @@ export default function ServicesPage() {
       name: "Calendario",
     },
     {
-      source:
-        "https://www.grafiquesmogent.com/wp-content/uploads/2021/04/stopper-impresion-imprenta-barcelona-005.jpg",
+      source: "https://www.grafiquesmogent.com/wp-content/uploads/2021/04/stopper-impresion-imprenta-barcelona-005.jpg",
       link: "/",
       name: "Stopper",
     },
