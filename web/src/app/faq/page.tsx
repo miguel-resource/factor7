@@ -1,5 +1,4 @@
-import Footer from "@/components/Common/Footer";
-import Header from "@/components/Common/Header";
+"use client";
 import { CommonWrapper } from "@/components/Common/Wrapper";
 import { ListFAQ } from '../../components/ListFAQ';
 

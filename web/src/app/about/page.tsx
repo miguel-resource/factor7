@@ -1,5 +1,5 @@
+"use client";
 import { CommonWrapper } from "@/components/Common/Wrapper";
-import Image from "next/image";
 
 export default function AboutPage() {
   return (

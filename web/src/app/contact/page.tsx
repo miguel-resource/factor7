@@ -1,3 +1,5 @@
+"use client";
+
 import { CommonWrapper } from "@/components/Common/Wrapper";
 import { Button, TextareaAutosize, TextField } from "@mui/material";
 

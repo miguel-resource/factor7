@@ -1,5 +1,5 @@
+"use client";
 import Carousel from "@/components/Carousel";
-import Header from "@/components/Common/Header";
 import Description from "@/components/Description";
 
 import SecurityPoints from "../components/SecurityPoints";

@@ -2,9 +2,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { useDispatch, useSelector } from "react-redux";
+import { setIsSearching } from "@/redux/searchReducer";
 
 export default function Header() {
+  const router = useRouter();
+
   const [showMenu, setShowMenu] = useState(false);
+  const search = useSelector((state: any) => state.search);
+  const dispatch = useDispatch();
 
   return (
     <header className="flex justify-between w-full p-4 bg-slate-800">
@@ -63,16 +70,19 @@ export default function Header() {
           <Link target="_blank" href="https://www.facebook.com/Factor7DP">
             <i className="fab fa-facebook-f"></i>
           </Link>
-         <Link target="_blank" href="https://www.instagram.com/factor7dp/">
+          <Link target="_blank" href="https://www.instagram.com/factor7dp/">
             <i className="fab fa-instagram"></i>
           </Link>
-          <Link
-            target="_blank"
-            href="https://www.tiktok.com/@factor7dp"
-          >
+          <Link target="_blank" href="https://www.tiktok.com/@factor7dp">
             <i className="fab fa-tiktok"></i>{" "}
           </Link>
-          <button className="ml-4">
+          <button
+            onClick={() => {
+              dispatch(setIsSearching(!search.isSearching));
+              router.push(`/services`);
+            }}
+            className="ml-4"
+          >
             <i className="fas fa-search text-xl "></i>
           </button>
         </div>

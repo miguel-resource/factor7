@@ -19,8 +19,7 @@ export default function Footer() {
           </a>
         </p>
         <p>
-          {/* direction */}
-          1234 Main St, Springfield, IL 62701
+          Alianza 305A, Centro, 68080 Oaxaca de Juárez, Oax.
         </p>
         <br />
         <p>
