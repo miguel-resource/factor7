@@ -56,8 +56,8 @@ export default function ServicesPage() {
     <CommonWrapper>
       <section
         className=" flex-col
-      mb-10 mt-10 text-slate-700 text-center flex px-20 align-middle justify-center
-      lg:px-0 lg:text-center lg:items-center lg:justify-center  lg:gap-10 lg:mt-20 lg:mb-20 "
+      mb-10 mt-10 text-slate-700 text-center flex px-5 align-middle justify-center
+      lg:text-center lg:items-center lg:justify-center  lg:gap-10 lg:mt-20 lg:mb-20 "
       >
         <div className="flex flex-col mx-auto w-full mb-10  lg:mx-auto lg:px-64">
           <h3 className="mb-10 mt-20">
