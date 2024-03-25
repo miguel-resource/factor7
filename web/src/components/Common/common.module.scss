@@ -1,0 +1,38 @@
+.sidebar {
+    @apply block bg-gray-800 text-white w-2/12 h-screen fixed top-0 left-0;
+    @apply w-2/12 h-screen fixed top-0 left-0;
+
+
+    &__header {
+        @apply p-4;
+        @apply text-lg font-semibold text-center;
+        @apply tracking-widest;
+    }
+
+    &__logo {
+        @apply w-20 h-20 mx-auto;
+    }
+
+    &__nav {
+        @apply mt-8;
+
+        ul {
+            @apply list-none tracking-widest;
+
+            li {
+                @apply py-4 px-4;
+                @apply cursor-pointer;
+                @apply hover:bg-gray-700;
+
+                a {
+                    @apply flex items-center;
+                    @apply text-white;
+                    @apply hover:text-white;
+                    @apply transition-all duration-300;
+                }
+            }
+        }
+    }
+
+
+}

@@ -1,11 +1,13 @@
-import { Sidebar } from "@/components/Common/Sidebar";
+import { WrapperAdmin } from "@/components/Common/WrapperAdmin";
 
 
 
 export default function AdminPage() {
   return (
-    <div>
-        <Sidebar />
-    </div>
+    <WrapperAdmin>
+        <section className="content">
+            <h1>Dashboard</h1>
+        </section>
+    </WrapperAdmin>
   );
 }
