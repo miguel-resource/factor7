@@ -2,8 +2,9 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { FAQ } from "@/types/FAQ";
 
-export const ListFAQ = () => {
+export const ListFAQ = (data: any) => {
   return (
     <>
       <h1
@@ -14,75 +15,24 @@ export const ListFAQ = () => {
       </h1>
 
       <div className="w-10/12 mx-auto flex flex-col items-center justify-center">
-        <Accordion className="bg-gray-100">
-          <AccordionSummary
-            className="font-semibold text-slate-700 tracking-widest lg:text-lg"
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
-          >
-            <h2>¿Qué es Factor Siete?</h2>
-          </AccordionSummary>
-          <AccordionDetails className="bg-gray-200 p-4 shadow-inner">
-            <p>
-              Factor Siete es una empresa de publicidad e imprenta,
-              especializada en la impresión de gran formato y la publicidad en
-              general.
-            </p>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion className="bg-gray-100">
-          <AccordionSummary
-            className="font-semibold text-slate-700 tracking-widest lg:text-lg"
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel2a-content"
-            id="panel2a-header"
-          >
-            <h2>¿Cuánto tiempo lleva Factor Siete en el mercado?</h2>
-          </AccordionSummary>
-          <AccordionDetails className="bg-gray-200 p-4 shadow-inner">
-            {" "}
-            <p>
-              Factor Siete lleva más de 10 años en el mercado, ofreciendo
-              soluciones de publicidad e impresión a empresas y particulares.
-            </p>
-          </AccordionDetails>
-        </Accordion>
 
-        {/* <Accordion className="bg-gray-100">
-          <AccordionSummary
-            className="font-semibold text-slate-700 tracking-widest lg:text-lg"
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel3a-content"
-            id="panel3a-header"
-          >
-            <h2>¿Qué tipo de impresión ofrece Factor Siete?</h2>
-          </AccordionSummary>
-          <AccordionDetails className="bg-gray-200 p-4 shadow-inner">
-            <p>
-              Factor Siete ofrece impresión de gran formato, impresión digital,
-              impresión offset y serigrafía.
-            </p>
-          </AccordionDetails>
-        </Accordion> */}
-
-        <Accordion className="bg-gray-100">
-          <AccordionSummary
-            className="font-semibold text-slate-700 tracking-widest lg:text-lg"
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel2a-content"
-            id="panel2a-header"
-          >
-            <h2>¿Qué tipo de impresión ofrece Factor Siete?</h2>
-          </AccordionSummary>
-          <AccordionDetails className="bg-gray-200 p-4 shadow-inner">
-            {" "}
-            <p>
-              Factor Siete ofrece impresión de gran formato, impresión digital,
-              impresión offset y serigrafía, entre otros servicios.
-            </p>
-          </AccordionDetails>
-        </Accordion>
+        {
+          data.data.map((faq: FAQ, index: number) => (
+            <Accordion key={index} className="bg-gray-100 w-12/12 md:w-8/12 lg:w-6/12 ">
+              <AccordionSummary
+                className="font-semibold text-slate-700 tracking-widest lg:text-lg"
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel2a-content"
+                id="panel2a-header"
+              >
+                <h2>{faq.question}</h2>
+              </AccordionSummary>
+              <AccordionDetails className="bg-gray-200 p-4 shadow-inner">
+                <p>{faq.answer}</p>
+              </AccordionDetails>
+            </Accordion>
+          ))
+        }
       </div>
     </>
   );

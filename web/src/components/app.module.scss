@@ -1,0 +1,28 @@
+
+
+.admin {
+    // @apply w-6/6 ml-56 mt-10 mx-auto;
+    @apply w-11/12 ml-56 mt-10 mx-auto;
+
+    &__header {
+        @apply p-4 px-0;
+        @apply text-lg font-semibold;
+        @apply tracking-widest;
+
+        &__title {
+            @apply text-5xl text-slate-800 mb-5;
+        }
+    }
+
+    &__add {
+        @apply flex justify-end;
+        @apply mt-5 mb-10;
+
+        button {
+            @apply bg-slate-800 text-white px-4 py-2 rounded-md;
+            @apply hover:bg-slate-700;
+            @apply transition-all duration-300;
+        }
+    }
+
+}

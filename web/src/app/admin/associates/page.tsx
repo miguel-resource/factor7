@@ -8,7 +8,6 @@ import { Service } from "@/types/Service";
 import { MRT_ColumnDef } from "material-react-table";
 import { useMemo, useState } from "react";
 
-
 const initial: Service[] = [
   {
     name: "Service 1",
@@ -19,8 +18,7 @@ const initial: Service[] = [
     description: "Description 2",
   },
 ];
-
-export default function AdminServicesPage() {
+export default function AdminAssociatesPage() {
   const [data, setData] = useState(() => initial);
 
   const columns = useMemo<MRT_ColumnDef<Service>[]>(
@@ -43,8 +41,9 @@ export default function AdminServicesPage() {
     <WrapperAdmin>
       <section className={s.admin}>
         <div className={s.admin__header}>
-          <h1 className={s.admin__header__title}>Servicios</h1>
+          <h1 className={s.admin__header__title}>Asociados</h1>
         </div>
+
 
         <DataTable data={data} setData={setData} columns={columns} />
       </section>
