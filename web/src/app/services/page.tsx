@@ -3,8 +3,6 @@
 import { CommonWrapper } from "@/components/Common/Wrapper";
 import { SearchInput } from "@/components/SearchInput";
 import { ServicesList } from "@/components/ServicesList";
-import { Provider, useSelector } from "react-redux";
-import Masonry from "react-responsive-masonry";
 
 export default function ServicesPage() {
   const services = [
@@ -65,9 +63,7 @@ export default function ServicesPage() {
             </span>
           </h3>{" "}
           <p className="text-sm lg:text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-            in mauris et odio convallis ultrices. In hac habitasse platea
-            dictumst
+            Estos son algunos de los servicios que ofrecemos en Factor Siete, si no encuentras lo que buscas, no dudes en contactarnos.
           </p>
         </div>
 

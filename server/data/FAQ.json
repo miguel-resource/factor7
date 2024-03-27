@@ -1,17 +1,12 @@
 [
-    {
-        "id": 1,
-        "question": "¿Qué es Factor Siete?",
-        "answer": "Factor Siete es una empresa de publicidad e imprenta, especializada en la impresión de gran formato y la publicidad en general."
-    },
-    {
-        "id": 2,
-        "question": "¿Cuánto tiempo lleva Factor Siete en el mercado?",
-        "answer": "Factor Siete lleva más de 10 años en el mercado, ofreciendo servicios de publicidad e imprenta a empresas y particulares en la ciudad de Puebla y sus alrededores."
-    },
-    {
-        "id": 3,
-        "question": "¿Qué tipos de impresión ofrece Factor Siete?",
-        "answer": "Factor Siete ofrece impresión digital, impresión offset, impresión en gran formato, impresión de tarjetas de presentación, impresión de volantes, impresión de lonas, impresión de vinil, impresión de papel bond, impresión de papel couche, impresión de papel periódico y mucho más."
-    }
+  {
+    "id": 2,
+    "question": "¿Cuánto tiempo lleva Factor Siete en el mercado?",
+    "answer": "Factor Siete lleva más de 10 años en el mercado, ofreciendo servicios de publicidad e imprenta a empresas y particulares en la ciudad de Puebla y sus alrededores."
+  },
+  {
+    "id": 3,
+    "question": "¿Qué tipos de impresión ofrece Factor Siete?",
+    "answer": "Factor Siete ofrece impresión digital, impresión offset, impresión en gran formato, impresión de tarjetas de presentación, impresión de volantes, impresión de lonas, impresión de vinil, impresión de papel bond, impresión de papel couche, impresión de papel periódico y mucho más."
+  }
 ]

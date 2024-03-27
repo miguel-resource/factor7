@@ -3,6 +3,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { FAQ } from "@/types/FAQ";
+import { CircularProgress } from "@mui/material";
 
 export const ListFAQ = (data: any) => {
   return (
@@ -16,7 +17,7 @@ export const ListFAQ = (data: any) => {
 
       <div className="w-10/12 mx-auto flex flex-col items-center justify-center">
 
-        {
+        {data.data.length > 0 ?
           data.data.map((faq: FAQ, index: number) => (
             <Accordion key={index} className="bg-gray-100 w-12/12 md:w-8/12 lg:w-6/12 ">
               <AccordionSummary
@@ -32,6 +33,9 @@ export const ListFAQ = (data: any) => {
               </AccordionDetails>
             </Accordion>
           ))
+          :
+            <CircularProgress />
+            
         }
       </div>
     </>

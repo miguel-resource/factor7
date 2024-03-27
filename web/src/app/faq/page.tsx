@@ -22,7 +22,7 @@ export default function FAQPage() {
   return (
     <CommonWrapper>
       <section className="text-gray-600 body-font py-20">
-        {data.length > 0 ? (
+        {data ? (
           <ListFAQ data={data} />
         ) : (
           <CircularProgress />

@@ -4,7 +4,7 @@ import { DataTable } from "@/components/Common/DataTable";
 import { WrapperAdmin } from "@/components/Common/WrapperAdmin";
 
 import s from "@/components/app.module.scss";
-import { getAll } from "@/services/FAQ";
+import { create, getAll, remove } from "@/services/FAQ";
 import { FAQ } from "@/types/FAQ";
 import { Service } from "@/types/Service";
 import { MRT_ColumnDef } from "material-react-table";
@@ -41,20 +41,38 @@ export default function AdminFaqPage() {
 
   const handleData = async () => {
     const res = await getAll();
-    console.log(res);
     setData(res.data);
   };
+
+  const handleCreateRow = async (values: FAQ, table: any) => {
+    console.log(values);
+    await create(values);
+    table.setCreatingRow(null);
+    handleData();
+  };
+
+  const handleDeleteRow = async (id: string) => {
+    await remove(id);
+    handleData();
+  }
 
   useEffect(() => {
     handleData();
   }, []);
+
   return (
     <WrapperAdmin>
       <section className={s.admin}>
         <div className={s.admin__header}>
           <h1 className={s.admin__header__title}>FAQ</h1>
         </div>
-        <DataTable data={data} setData={setData} columns={columns} />
+        <DataTable
+          data={data}
+          setData={setData}
+          columns={columns}
+          handleCreateRow={handleCreateRow}
+          handleDeleteRow={handleDeleteRow}
+        />
       </section>
     </WrapperAdmin>
   );

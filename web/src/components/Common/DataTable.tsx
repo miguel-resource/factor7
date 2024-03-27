@@ -1,5 +1,5 @@
 import { Delete } from "@mui/icons-material";
-import { Box } from "@mui/material";
+import { Box, IconButton, Tooltip } from "@mui/material";
 import {
   MRT_ActionMenuItem,
   MRT_TableContainer,
@@ -18,7 +18,13 @@ type Person = {
   state: string;
 };
 
-export const DataTable = ({ data, setData, columns }: any) => {
+export const DataTable = ({
+  data,
+  setData,
+  columns,
+  handleCreateRow,
+  handleDeleteRow,
+}: any) => {
   const table = useMaterialReactTable({
     autoResetPageIndex: false,
     columns,
@@ -30,8 +36,12 @@ export const DataTable = ({ data, setData, columns }: any) => {
     editDisplayMode: "row",
     enableEditing: true,
     positionToolbarAlertBanner: "top",
-    onCreatingRowSave: (row: any) => {
-      handleCreateRow(row);
+    onEditingRowSave: ({ values, row, table }) => {
+      console.log(values);
+      // table.setEditingRow(null);
+    },
+    onCreatingRowSave: ({ values, row, table }) => {
+      handleCreateRow(values, table);
     },
     muiRowDragHandleProps: ({ table }) => ({
       onDragEnd: () => {
@@ -46,25 +56,24 @@ export const DataTable = ({ data, setData, columns }: any) => {
         }
       },
     }),
-    renderRowActionMenuItems: ({ row, table }) => [
-      <MRT_ActionMenuItem
-        key="delete"
-        icon={<Delete />}
-        onClick={() => {
-          data.splice(row.index, 1);
-          setData([...data]);
-        }}
-        label={"Eliminar"}
-        table={table}
-      ></MRT_ActionMenuItem>,
-    ],
+    renderRowActions: ({ row, staticRowIndex, table }) => (
+      <Box sx={{ display: "flex", gap: "1rem" }}>
+        <Tooltip title="Editar">
+          <IconButton onClick={() => table.setEditingRow(row)}>
+            <i className="fas fa-edit text-base"></i>
+          </IconButton>
+        </Tooltip>
+        <Tooltip title="Eliminar">
+          <IconButton
+            color="error"
+            onClick={() => handleDeleteRow(row.original.id)}
+          >
+            <i className="fas fa-trash text-base"></i>
+          </IconButton>
+        </Tooltip>
+      </Box>
+    ),
   });
-
-  const handleCreateRow = (row: any) => {
-    data.push(row.values);
-    setData([...data]);
-    table.setCreatingRow(null);
-  };
 
   return (
     <Box sx={{ height: 400, width: "100%", color: "black" }}>

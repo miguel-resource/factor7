@@ -23,8 +23,6 @@ export class FaqService {
   }
 
   findAll() {
-    // return `This action returns all faq`;
-    // 
     try {
       const data = fs.readFileSync(path.join(path.dirname(__dirname), '../data', 'faq.json'), 'utf-8');
       return JSON.parse(data);
@@ -46,10 +44,33 @@ export class FaqService {
   }
 
   update(id: number, updateFaqDto: UpdateFaqDto) {
-    return `This action updates a #${id} faq`;
+    try {
+      const data = fs.readFileSync(path.join(path.dirname(__dirname), '../data', 'faq.json'), 'utf-8');
+      const faqs = JSON.parse(data);
+      const index = faqs.findIndex((faq) => faq.id === id);
+      faqs[index] = {
+        ...faqs[index],
+        ...updateFaqDto,
+      };
+      fs.writeFileSync(path.join(path.dirname(__dirname), '../data', 'faq.json'), JSON.stringify(faqs, null, 2));
+      return faqs[index];
+    } catch (error) {
+      console.log(error);
+      return null;
+    }
   }
 
   remove(id: number) {
-    return `This action removes a #${id} faq`;
+    try {
+      const data = fs.readFileSync(path.join(path.dirname(__dirname), '../data', 'faq.json'), 'utf-8');
+      const faqs = JSON.parse(data);
+      const filteredFaqs = faqs.filter((faq) => faq.id !== id);
+      fs.writeFileSync(path.join(path.dirname(__dirname), '../data', 'faq.json'), JSON.stringify(filteredFaqs, null, 2));
+      return true;
+    } catch (error) {
+      console.log(error);
+      return false;
+    }
+
   }
 }
